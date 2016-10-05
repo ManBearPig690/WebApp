@@ -1,0 +1,7 @@
+﻿.web-fonts {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.box-decoration {
+    border-radius: 25px;    
+    box-shadow: 10px 10px 5px #888888;
+}

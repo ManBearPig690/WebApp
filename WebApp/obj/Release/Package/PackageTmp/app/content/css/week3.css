@@ -1,0 +1,42 @@
+﻿/*this will make the background color of the entire page look like the selected tab*/
+body {
+    background-color: #e2e2e2;
+
+}
+/*
+    this will make all section tags on the page have a different text color
+    and make it float to the left side fo the screen
+*/
+section {
+    float: left;
+    color: cornflowerblue;
+   
+}
+/*
+    this will force all article tags to be 300px widht and have an 85px space between the tag aboge it
+*/
+article {
+    margin-top: 85px;
+    width: 300px !important;
+}
+
+/*
+    this will cause an element to flot to the right and have an auto widht;
+*/
+.auto-wdith{
+    width: auto !important;
+}
+
+/*
+    this will make a <p> have bold text
+*/
+.p-styling {
+    font-weight: bold;
+}
+
+/*
+    this style will add a line through any text...currently on a <strong> element so its bold too
+*/
+.strike-through {
+    text-decoration: line-through;
+}

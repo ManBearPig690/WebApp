@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Com 319</title>
+    <base href="http://localhost:8080/" target="_blank" />
+    <meta charset="utf-8" />
+    <link href="app/content/css/bootstrap.css" rel="stylesheet" />
+    <link href="app/content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="app/content/css/ui-bootstrap-csp.css" rel="stylesheet" />
+    <link href="app/content/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app/content/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="navbar navbar-default" ng-controller="navCtrl as vm">
+    <header>
+        <strong style="font-size: 2em;">HTML 5 Web Application</strong>
+        <span style="cursor: pointer; float: right;"><i class="fa fa-2x fa-info" aria-hidden="true" ng-click="vm.openModal();"></i></span>
+    </header>
+    <div class="container-fluid">
+        <div class="navbar-header" style="width: 100%;">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="label in vm.sequence" ng-class="label.Class" ng-click="vm.navClick(label.Id);">
+                    <a ng-href="{{label.Link}}">{{label.Text}}</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    <div class="main-content">
+        <div ng-view></div>
+    </div>
+    <script src="app/js/angular.js"></script>
+    <script src="app/js/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="app/js/jquery-1.9.1.min.js"></script>
+    <script src="app/js/bootstrap.min.js"></script>
+    <script src="app/js/angular-ui/ui-bootstrap.min.js"></script>
+    <script src="app/js/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="app/scripts/week1Ctrl.js"></script>
+    <script src="app/scripts/week2Ctrl.js"></script>
+    <script src="navCtrl.js"></script>
+    <script src="config.js"></script>
+<footer class="footer">James Fleuret &copy; 2016
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border: 0; width: 88px; height: 31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss"
+                 alt="Valid CSS!"/>
+        </a>
+    </footer>
+</body>
+</html>

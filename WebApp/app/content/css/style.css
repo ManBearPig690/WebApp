@@ -1,0 +1,21 @@
+﻿body {
+}
+footer {
+    background-color: #333;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    color: #e3e3e3;
+}
+.main-content {
+    padding-left: 40px;
+    padding-top: 15px;
+}
+.list-indent {
+    padding-left: 15px;
+}
+
+.no-decoration {
+    text-decoration: none !important;
+    color: #000000;
+}
